@@ -1,0 +1,272 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #ffe6e6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 30px;
+}
+
+.botao {
+  padding: 10px 20px;
+  background-color: #ff3366;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.carrossel img {
+  max-width: 80%;
+  max-height: 400px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 15px #999;
+}
+
+.botoes button {
+  font-size: 20px;
+  margin: 0 10px;
+  padding: 8px 15px;
+  border: none;
+  background-color: #ff6699;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.mensagem {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #cc3366;
+}
+
+#data {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #666;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #ffe6e6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.botao {
+  padding: 12px 24px;
+  background-color: #1DB954; /* cor estilo Spotify */
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 18px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.carrossel {
+  position: relative;
+}
+
+.carrossel img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 15px #999;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.botoes button {
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff6699;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#data {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #666;
+}
+
+.mensagem {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #cc3366;
+  line-height: 1.5;
+  padding: 0 10px;
+}
+
+/* Música estilo Spotify acima da imagem */
+.musica {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1DB954;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+}
+
+.musica i {
+  font-style: normal;
+}
+
+/* Estilo para a mensagem na página inicial */
+.mensagem-inicio {
+  font-size: 18px;
+  color: #444; /* Um tom de cinza escuro */
+  font-style: italic;
+  margin-top: 15px;
+  margin-bottom: 25px; /* Dá espaço antes do botão */
+  min-height: 25px; /* Guarda o espaço enquanto o JS carrega */
+}
+
+/* --- Estilos para a página "Saudade" --- */
+
+#botao-saudade {
+  padding: 12px 24px;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+#resultado-saudade {
+  margin-top: 30px;
+  min-height: 100px; /* Garante um espaço */
+}
+
+/* Estilo para a imagem que aparece */
+#resultado-saudade img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 0 15px #999;
+}
+
+/* Estilo para o player de áudio */
+#resultado-saudade audio {
+  width: 100%;
+  margin-top: 15px;
+}
+
+/* Estilo para o link "Voltar" */
+.botao-voltar {
+  display: inline-block;
+  margin-top: 30px;
+  color: #888;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.botao-voltar:hover {
+  text-decoration: underline;
+}
+
+.botoes-menu {
+  display: flex;
+  flex-direction: column; /* Um botão abaixo do outro */
+  gap: 15px; /* Espaço entre eles */
+  align-items: center; /* Centraliza os botões */
+}
+
+/* --- Estilos para a página Quiz --- */
+
+.quiz-botoes {
+  display: flex;
+  flex-direction: column; /* Botões um abaixo do outro */
+  gap: 15px; /* Espaço entre os botões */
+  margin-top: 20px;
+  align-items: center; /* Centraliza os botões */
+}
+
+.quiz-botoes button {
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #ff6699; /* Cor rosa do seu tema */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 80%; /* Faz os botões terem uma largura boa */
+  max-width: 300px;
+  transition: background-color 0.2s;
+}
+
+.quiz-botoes button:hover {
+  background-color: #cc3366; /* Um rosa mais escuro no hover */
+}
+
+#quiz-resultado {
+  margin-top: 30px;
+  min-height: 50px; /* Garante um espacinho */
+}
+
+/* --- Estilos para a página Mural --- */
+
+.mural-lista {
+  list-style: none; /* Remove os pontinhos pretos */
+  padding: 0;
+  margin: 25px auto;
+  text-align: left; /* Alinha o texto à esquerda, fica mais legível */
+  width: 90%;
+  max-width: 400px;
+}
+
+.mural-lista li {
+  font-size: 18px;
+  color: #cc3366; /* Cor rosa que já usamos */
+  margin-bottom: 15px;
+  padding-left: 30px; /* Dá espaço para o emoji */
+  position: relative;
+  line-height: 1.5;
+}
+
+/* Isso coloca um coraçãozinho antes de cada item */
+.mural-lista li::before {
+  content: '💖'; /* Você pode trocar por '❤️', '✨', '⭐' etc. */
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Para o sistema de senha */
+.container-oculto {
+  display: none;
+}
